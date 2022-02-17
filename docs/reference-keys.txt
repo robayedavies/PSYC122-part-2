@@ -15,3 +15,14 @@ lab-activity-data-and-.r-files
 how-to-guide-data-and-.r-files
 explanation-of-the-data-files
 our-learning-goals
+welcome
+resources-for-you
+pre-lab-activity-1
+pre-lab-activity-1-alternative
+pre-lab-activity-2-getting-ready-for-the-lab-class
+get-your-files-ready
+review-the-how-to-guide
+lab-activity
+what-is-in-the-activity-.r-file
+tasks
+what-is-in-the-data-files

@@ -14,3 +14,4 @@ explanation-of-the-activity-exercises
 lab-activity-data-and-.r-files
 how-to-guide-data-and-.r-files
 explanation-of-the-data-files
+our-learning-goals

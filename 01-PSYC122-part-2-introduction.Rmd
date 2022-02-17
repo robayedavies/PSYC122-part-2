@@ -13,13 +13,45 @@ knitr::opts_chunk$set(echo = TRUE)
 # PSYC122 Part 2 Week 16
 
 Welcome to our overview of the materials and activities you will work with in **PSYC122 Week 16**.
+
+We will complete a series of four classes in weeks 16-19.
+The classes are designed to help students to revise and put into practice some of the key ideas and skills you have been developing in the first year research methods modules *PSYC121, PSYC123 and PSYC124*.
+We will do this in the context of a live research project with potential real world impacts.
+
+Our focus will be on what makes it easy or difficult for people to understand written health information.
+This research is needed because it is important to ensure that health advice can be understood but existing evidence can tell us little about how advice should be written so that everyone who reads the advice can understand it.
+
+We will present our PSYC122 lessons in the context of this research project because we think that this will help you to make sense of the data, and of what we ask you to do.
+We will be revisiting some of the ideas and techniques you have seen introduced in previous classes.
+This is to give you the opportunity to revise and consolidate your learning.
+And we will be extending your development with some new ideas.
+
+Ultimately, our aim will be to contribute new findings from data we collect with your help.
+These new findings will, we hope, help to make the provision of health advice a bit more useful in future.
+
+## Our learning goals
+
+In Week 16, we aim to further develop your skills in working with psychological data.
+We will learn how to answer research questions like:
+
+1. What person attributes predict success in understanding?
+2. Can people accurately evaluate whether they correctly understand written health information?
+
+These kinds of research questions can be answered using methods like correlation and linear models.
+
+In Week 16, we will consolidate learning on **data visualization**:
+
+- Using histograms to examine the distributions of variables;
+- Learning to edit the histograms so they are more effective.
+
 You will see -- below -- links to the lectures, information about the data we will analyze, and an explanation of the activities.
 All the links in this document are *live*: click on them and they will take you to the webpage.
+
 All the links to the different materials and activities are also in the **Check list** for Week 16 on Moodle, here:
 
 <https://modules.lancaster.ac.uk/mod/checklist/view.php?id=1510231>
 
-Everything you need for a practical class is in the **Week 16 files** folder on Moodle, here:
+Everything you need for a practical class can also be found in the **Week 16 files** folder on Moodle, here:
 
 <https://modules.lancaster.ac.uk/course/view.php?id=31548#section-6>
 
@@ -27,11 +59,11 @@ Everything you need for a practical class is in the **Week 16 files** folder on 
 
 The lecture material for this week is presented in three parts.
 
-[Part 1 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=1a7c6e5e-3b8e-4084-af23-acc80117761c){target="_blank"})
+[Part 1 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=1a7c6e5e-3b8e-4084-af23-acc80117761c){target="_blank"}
 
-[Part 2 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=3463e56f-d1ee-41a3-b347-acc80120e181){target="_blank"})
+[Part 2 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=3463e56f-d1ee-41a3-b347-acc80120e181){target="_blank"}
 
-[Part 3 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=d88a1a07-50cb-4382-8a3e-acc8013582e3>){target="_blank"})
+[Part 3 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=d88a1a07-50cb-4382-8a3e-acc8013582e3>){target="_blank"}
 
 ## Readings
 
@@ -41,7 +73,7 @@ We do not provide further reading but you may find it helpful to take another lo
 
 In weeks 16-19, we will be working together on a research project to investigate how people vary in their response to health advice.
 Completing the project involves collecting responses from PSYC122 students.
-In the classes, we can then analyze the data we collect to test our predictions about what makes it difficult or easy to understand health advice.
+In the classes, we can then analyze the data we collect.
 
 To enter your responses, we invite you to complete a short survey.
 You can complete the survey here (just click on the web address to get started):

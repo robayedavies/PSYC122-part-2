@@ -4,10 +4,166 @@ output:
   pdf_document: default
 ---
 
+
+
 > Rob Davies
 
-# PSYC122 -- part 2 -- introduction 
+# PSYC122 Part 2 Week 16
 
-Place-holder text
+Welcome to our overview of the materials and activities you will work with in **PSYC122 Week 16**.
+You will see -- below -- links to the lectures, information about the data we will analyze, and an explanation of the activities.
+All the links in this document are *live*: click on them and they will take you to the webpage.
+All the links to the different materials and activities are also in the **Check list** for Week 16 on Moodle, here:
 
-## New section {#122-2-introduction}
+<https://modules.lancaster.ac.uk/mod/checklist/view.php?id=1510231>
+
+Everything you need for a practical class is in the **Week 16 files** folder on Moodle, here:
+
+<https://modules.lancaster.ac.uk/course/view.php?id=31548#section-6>
+
+## Lectures: video recordings
+
+The lecture material for this week is presented in three parts.
+
+[Part 1 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=1a7c6e5e-3b8e-4084-af23-acc80117761c){target="_blank"})
+
+[Part 2 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=3463e56f-d1ee-41a3-b347-acc80120e181){target="_blank"})
+
+[Part 3 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=d88a1a07-50cb-4382-8a3e-acc8013582e3>){target="_blank"})
+
+## Readings
+
+We do not provide further reading but you may find it helpful to take another look at the readings provided, previously, for your classes in weeks 11-13.
+
+## Pre-lab activity
+
+In weeks 16-19, we will be working together on a research project to investigate how people vary in their response to health advice.
+Completing the project involves collecting responses from PSYC122 students.
+In the classes, we can then analyze the data we collect to test our predictions about what makes it difficult or easy to understand health advice.
+
+To enter your responses, we invite you to complete a short survey.
+You can complete the survey here (just click on the web address to get started):
+
+<https://lancasteruni.eu.qualtrics.com/jfe/form/SV_9HX4wSBz3s1uIuO>
+
+The survey asks you to:
+
+- complete some questions about who you are;
+- and then answer some questions about what you know about some English words, about what you know about health matters, and about how you approach reading.
+
+The survey then asks you to:
+
+- read five short extracts from patient information leaflets about different kinds of health issue;
+- respond to some multiple choice questions about each extract;
+- and rate how well you think you understand the advice.
+
+The survey should take 15-20 minutes to complete.
+Some people will take less time, and some people might take a little more time.
+We think 15-20 minutes is about right.
+**Please do not spend longer on the survey than 20 minutes.**
+
+Taking part in the survey is completely voluntary.
+You can stop at any time without completing the survey if you do not want to finish it.
+If you do not want to do the survey, you can do an alternative activity (see below).
+
+**All** responses will be recorded completely anonymously.
+
+## Pre-lab alternative activity
+
+If you do not want to complete the survey, we invite you to read the pre-registered research plan for the *PSYC122 health advice* research project.
+The plan was registered here:
+
+<https://osf.io/9j58g/>
+
+The document is linked to the *Open Science Framework* repository for the project.
+The project information can be found here:
+
+<https://osf.io/pxdtb/>
+
+There is not much there right now.
+When we have finished data collection for the project, we will post the **completely anonymous** data file here.
+
+## Lab activities
+
+### Objectives
+
+In Week 16, we aim to:
+
+\begin{enumerate}
+\item
+Consolidate learning on data visualization:
+\begin{itemize}
+\item
+Use histograms to examine the distributions of variables
+\item
+Use boxplots to examine the differences between groups on a variable
+\item
+Use scatterplots to examine how values on one variable relate to values on another variable
+\end{itemize}
+\item
+Develop learning in how we use data from previous studies to make predictions about future results (our 2021 \emph{PSYC122 COVID-19 project} results)
+\end{enumerate}
+
+### Explanation of the activity exercises
+
+When we plan research, we need to make specific predictions about what we expect to find.
+Often, we can make these predictions by looking at the results from similar studies done previously.
+
+When we make predictions, we need to consider:
+
+\begin{itemize}
+\item
+The shape or character of the effect we expect to observe: will one group have a higher score on average than another? will we see a positive or a negative association between two variables?
+\item
+The size or the impact of the effect we expect: will we see a large difference or a small difference? will the slope of the effect of the association be steep or shallow?
+\end{itemize}
+
+It helps to make the judgments about what we expect if we draw plots to *visualize* the relationships or the differences we are expected in.
+Later, when we look at the results for our 2021 project, we can check if the relationships or differences we expected are matched by those we see in our data.
+
+### Lab activity: Data and .R files
+
+In the lab activity .R file **122-week-16-lab-activity.R**, you will work with data from a study about how people respond to guidance about a variety of health topics (general topics):
+
+- **general-2021-02-09.csv**
+
+The data are similar in format to the COVID-19 data we are collecting as part of the PSYC122 project.
+
+The activity .R file and the data .csv file can be found here:
+
+<https://modules.lancaster.ac.uk/mod/folder/view.php?id=1510232>
+
+### How-to guide: Data and .R files
+
+Every coding action we ask you to do in the lab activity .R file can be revised in the **How-to** guide.
+The **How-to** guide shows you how to read in the data file and draw the plots using the same kind of code that you will need to use to complete the activity.
+
+The **How-to** guide .R code was written to work with data from a 2020 national UK study about how people respond to guidance about COVID-19:
+
+- **covid-2021-02-09.csv**
+
+The data are similar in format to the COVID-19 data we are collecting now as part of the PSYC122 project.
+
+<!-- ```{r data-image-covid-2021-02-09, echo=FALSE, out.width='85%', fig.cap="Extract view of COVID-19 (2020 study) data .csv file"} -->
+<!-- knitr::include_graphics("data-image-covid-2021-02-09.png") -->
+<!-- ``` -->
+
+The **How-to** guide .R file and this data .csv file can be found here:
+
+<https://modules.lancaster.ac.uk/mod/folder/view.php?id=1510232>
+
+### Explanation of the data files
+
+Each of the data files we will work with has a similar structure.
+You can see there are columns:
+
+- `PROLIFIC.ID` participant code
+- `mean.acc` average accuracy of response to questions testing understanding of health guidance
+- `mean.self` average self-rated accuracy of understanding of health guidance
+- `age` age in years
+- `HLVA` health literacy score
+- `gender` gender code
+- `EDUCATION` education level code
+- `ETHNICITY` ethnicity (Office National Statistics categories) code
+- `education` education simplified coding
+- `ethnicity` ethnicity simplified coding

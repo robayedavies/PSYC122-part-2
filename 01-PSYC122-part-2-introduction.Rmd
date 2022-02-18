@@ -24,14 +24,15 @@ study.two.gen <- read_csv("study-two-general-participants.csv")
 
 ## Welcome
 
-Welcome to the materials and guidance you will work with in **PSYC122 Week 16**.
+Welcome to your overview of the materials and guidance you will work with in **PSYC122 Week 16**.
 
 We will complete four classes in weeks 16-19.
 These classes are designed to help students to revise and put into practice some of the key ideas and skills you have been developing in the first year research methods modules *PSYC121, PSYC123 and PSYC124*.
-We will do this in the context of a live research project with potential real world impacts.
+
+We will do this in the context of a live research project with potential real world impacts: the **Clearly understood** project.
 
 Our focus will be on **what makes it easy or difficult for people to understand written health information**.
-We encounter written health information all the time: in COVID warnings signs, on medication labels, in clinics when we go to see the doctor, and online when we research things we are worried about.
+We encounter written health information all the time: in warnings signs, on medication labels, in clinics when we go to see the doctor, and online when we research things we are worried about.
 It is not always easy to understand this information.
 The problem is that it is unclear how health information should be communicated.
 As psychologists, we can help to improve health communication.
@@ -67,27 +68,32 @@ We will be:
 - Using histograms to examine the distributions of variables;
 - And learning to edit the histograms so they are more effective.
 
+```{r histogram, echo=FALSE, warning=FALSE, fig.cap="How-to guide example of a histogram showing observed mean accuracy of understanding of health information"}
+ggplot(data = study.one, aes(x = mean.acc)) +
+geom_histogram(binwidth = 0.1) +
+  theme_bw() +
+  labs(x = "mean accuracy", y = "frequency")
+```
+
 ## Resources for you
 
 You will see -- below -- links to the lectures, information about the data we will analyze, and an explanation of the activities.
 
-All the links to the different materials and activities are also in the **Check list** for Week 16 on Moodle, here:
+All the links to the lectures, and everything you need for your practical work class can *also* be found in the **Week 16 files** folder on Moodle, here:
 
-<https://modules.lancaster.ac.uk/mod/checklist/view.php?id=1510231>
-
-Everything you need for a practical class can also be found in the **Week 16 files** folder on Moodle, here:
-
-<https://modules.lancaster.ac.uk/course/view.php?id=31548#section-6>
+[Link to Moodle](https://modules.lancaster.ac.uk/course/view.php?id=35319#section-9){target="_blank"}
 
 ## Lectures: video recordings
 
 The lecture material for this week is presented in three parts.
+Click on a link and your browser should open a tab showing the *Panopto* video for the lecture part.
+(You will need to be on campus or logged in to the university VPN to get access to the videos.)
 
-[Part 1 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=1a7c6e5e-3b8e-4084-af23-acc80117761c){target="_blank"}
+[Part 1 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=dfdd3c63-d608-446f-9324-ae3f011ad107){target="_blank"}
 
-[Part 2 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=3463e56f-d1ee-41a3-b347-acc80120e181){target="_blank"}
+[Part 2 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=2df8cf1c-f577-4870-816a-ae3f011e841b){target="_blank"}
 
-[Part 3 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=d88a1a07-50cb-4382-8a3e-acc8013582e3>){target="_blank"}
+[Part 3 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=fc290f97-5085-4b92-8870-ae3f01294230){target="_blank"}
 
 ## Readings
 
@@ -102,7 +108,9 @@ In our class activities, we can then analyze the data we collect.
 To enter your responses, we invite you to complete a short survey.
 You can complete the survey here (just click on the web address to get started):
 
-<https://lancasteruni.eu.qualtrics.com/jfe/form/SV_9HX4wSBz3s1uIuO>
+[Complete the survey](https://lancasteruni.eu.qualtrics.com/jfe/form/SV_0ww8HHxx172TPJs){target="_blank"}
+
+### Survey information
 
 The survey asks you to:
 
@@ -118,7 +126,7 @@ The survey then asks you to:
 The survey should take about 20 minutes to complete.
 Some people will take less time, and some people might take a little more time.
 
-Taking part in the survey is completely voluntary.
+Taking part in the survey is **completely voluntary**.
 You can stop at any time without completing the survey if you do not want to finish it.
 If you do not want to do the survey, you can do an alternative activity (see below).
 
@@ -127,31 +135,39 @@ All responses will be recorded completely anonymously.
 ## Pre-lab activity 1 alternative
 
 If you do not want to complete the survey, we invite you to read the pre-registered research plan for the *PSYC122 health advice* research project.
-The plan was registered here:
 
-<https://osf.io/9j58g/>
-
-The document is linked to the *Open Science Framework* repository for the project.
-The project information can be found here:
-
-<https://osf.io/pxdtb/>
-
-There is not much there right now.
-When we have finished data collection for the project, we will post the **completely anonymous** data file here.
+[Read the project pre-registration](https://osf.io/p6fsc/){target="_blank"}
 
 ## Pre-lab activity 2: Getting ready for the lab class
 
 ### Get your files ready
 
-Download the `122_week16_forStudents.zip` folder and upload it to RStudio Server.
+Download the [122_week16_forStudents.zip](files/week-16/122_week16_forStudents.zip) files you need and upload them to your RStudio Server.
+
+The folder includes data files:
+
+- `study-one-general-participants.csv`
+- `study-two-general-participants.csv`
+
+and code files:
+
+- `2021-22-PSYC122-w16-activity.R`
+- `2021-22-PSYC122-w16-how-to.R`
+
+You will use `2021-22-PSYC122-w16-how-to.R` in the lab activity.
 
 ### Review the how-to guide
 
 We show you how to do everything you need to do in the lab activity (see the next section) in the `how-to` guide.
 
-The guide includes an .R file `2021-22-PSYC122-w16-how-to.R` with code and advice, and a video showing you how the code works.
+The guide comprises an .R file `2021-22-PSYC122-w16-how-to.R` with code and advice, and a video showing you how the code works.
 The code in the .R file was written to work with the data file `study-one-general-participants.csv`.
-You can find both the `2021-22-PSYC122-w16-how-to.R` and the `study-one-general-participants.csv` files in the `122_week16_forStudents.zip` folder.
+
+In the video, I work my way through the R code, step-by-step, explaining what each line of code does.
+Watching the video takes about 20 minutes.
+It is completely optional but I have provided the video because students have told us they find it useful.
+
+[Watch the how-to guide](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=fc290f97-5085-4b92-8870-ae3f01294230){target="_blank"}
 
 ## Lab activity
 
@@ -161,11 +177,15 @@ In the lab activity .R file `2021-22-PSYC122-w16-activity.R`, you will work with
 
 The data are similar in format to the response data we are collecting as part of the PSYC122 project.
 
-The activity .R file and the data .csv file can be found here:
+The activity .R file and the data .csv file can be downloaded from:
 
-<https://modules.lancaster.ac.uk/mod/folder/view.php?id=1510232>
+[122_week16_forStudents.zip](files/week-16/122_week16_forStudents.zip)
 
-### What is in the activity .R file
+Or you can download it from the module Moodle page for PSYC122:
+
+[Link to Moodle](https://modules.lancaster.ac.uk/course/view.php?id=35319#section-9){target="_blank"}
+
+### What is in the activity .R file?
 
 We will take things step-by-step.
 We will split .R scripts into parts, tasks and questions:  

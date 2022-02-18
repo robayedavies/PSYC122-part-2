@@ -26,3 +26,5 @@ lab-activity
 what-is-in-the-activity-.r-file
 tasks
 what-is-in-the-data-files
+fig:histogram
+survey-information

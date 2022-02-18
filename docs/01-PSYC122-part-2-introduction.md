@@ -135,7 +135,7 @@ Click on a link and your browser should open a tab showing the *Panopto* video f
 
 [Part 2 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=2df8cf1c-f577-4870-816a-ae3f011e841b){target="_blank"}
 
-[Part 3 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=fc290f97-5085-4b92-8870-ae3f01294230){target="_blank"}
+[Part 3 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=17266295-94df-4b9f-baf3-ae3f012274e5){target="_blank"}
 
 ## Readings
 

@@ -179,7 +179,7 @@ If you do not want to complete the survey, we invite you to read the pre-registe
 
 ### Get your files ready
 
-Download the [122_week17_forStudents.zip](files/week-16/122_week17_forStudents.zip) files you need and upload them to your RStudio Server.
+Download the [122_week17_forStudents.zip](files/week-17/122_week17_forStudents.zip) files you need and upload them to your RStudio Server.
 
 The folder includes data files:
 

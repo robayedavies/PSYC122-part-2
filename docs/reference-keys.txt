@@ -45,3 +45,10 @@ what-is-in-the-activity-.r-file-1
 tasks-1
 what-is-in-the-data-files-1
 psyc122-part-2-week-17
+whats-in-the-lectures
+understanding-the-scientific-process
+data-visualization
+learning-to-learn-r
+fig:hist-eg
+fig:scatterplot-eg
+fig:boxplot-eg

@@ -90,25 +90,17 @@ These new findings will, we hope, help to make the provision of health advice a 
 
 In Week 17, we will ask you to do two things.
 
-<!-- First, we will ask you to do a pre-lab activity that involves completing a survey. -->
-<!-- Completing the survey will help you to make sense of the numbers you will be working with in the activities. -->
-<!-- Completing the pre-lab activity will help to teach you about the challenges of measurement, a key aspect of the scientific thinking skills we will help you grow: -->
+1. We will consolidate and *extend* learning on data visualization:
 
-<!-- - *Scientific thinking*: from concerns to questions to results and critical evaluation -->
+- Use histograms to examine the distributions of variables;
+- Use boxplots to examine the differences between groups on a variable;
+- Use scatterplots to examine how values on one variable relate to values on another variable;
+- Learn to edit the scatterplots;
+- Learn to edit the histograms.
 
-<!-- Second, we wil ask you to do a set of practical tasks in the lab activity that are designed to consolidate your learning on *data visualization*. -->
-<!-- We will focus on the visualization of data distributions. -->
-<!-- We will be: -->
+2. We will also do some revision on using the correlation test to examine associations between variables. 
 
-<!-- - Using histograms to examine the distributions of variables; -->
-<!-- - And learning to edit the histograms so they are more effective. -->
-
-<!-- ```{r histogram, echo=FALSE, warning=FALSE, fig.cap="How-to guide example of a histogram showing observed mean accuracy of understanding of health information"} -->
-<!-- ggplot(data = study.one, aes(x = mean.acc)) + -->
-<!-- geom_histogram(binwidth = 0.1) + -->
-<!--   theme_bw() + -->
-<!--   labs(x = "mean accuracy", y = "frequency") -->
-<!-- ``` -->
+We will do this in the context of the health comprehension **Clearly understood** project so that you can see an example of how psychological science proceeds from the statement of research questions to tests of potential answers to those questions in data analysis.
 
 ## Resources for you
 
@@ -129,6 +121,73 @@ Click on a link and your browser should open a tab showing the *Panopto* video f
 [Part 2 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=c748b016-cca2-45da-b240-ae4600da40ba){target="_blank"}
 
 [Part 3 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=21365e88-7f68-40d4-8c75-ae4600e29a6c){target="_blank"}
+
+### What's in the lectures
+
+The lectures have three main areas of focus.
+
+#### Understanding the scientific process
+
+I suggest that learning about how psychologists ask and answer research questions is key to learning about psychological science.
+
+I outline the way in which, in the **clearly understood** project, we chose our data collection measures -- our theory-based selection of the things we decided to measure -- and I discuss how the data analysis we can do *follows* a series of logical steps: from question, to hypothesis, to analysis. 
+
+I encourage you to begin reflecting on the ways in which, as scientists, you can **critically evaluate this logic, these choices**.
+
+#### Data visualization
+
+Effective data visualization is a core competence in modern work -- in any professional field -- I look at why, what *effective* data visualization is, and how we do it.
+
+We will be learning *practical* coding skills, so that you can produce visualizations, but I put this work in context, relating our approach to the Exploratory Data Analysis approach developed by John Tukey and others.
+
+We want you to actively, reflectively, interrogate or read the plots you make, so that you can use them to get insight into data.
+
+I introduce or remind you about three kinds of plots.
+
+We use histograms like the example shown in Figure \@ref(fig:hist-eg) to examine the distributions of observed values in a variable.
+
+<div class="figure" style="text-align: center">
+<img src="02-PSYC122-part-2-week-17_files/figure-html/hist-eg-1.png" alt="A histogram showing the distribution of mean accuracy scores in the study one dataset, the average is shown at the red line" width="60%" />
+<p class="caption">(\#fig:hist-eg)A histogram showing the distribution of mean accuracy scores in the study one dataset, the average is shown at the red line</p>
+</div>
+
+We use scatterplots, like the example shown in Figure \@ref(fig:scatterplot-eg), to examine a potential association between two variables.
+
+<div class="figure" style="text-align: center">
+<img src="02-PSYC122-part-2-week-17_files/figure-html/scatterplot-eg-1.png" alt="A scatterplot showing the potential association between mean (tested) accuracy of understanding and self-rated accuracy of understanding, the linear model best fit line is shown in red" width="60%" />
+<p class="caption">(\#fig:scatterplot-eg)A scatterplot showing the potential association between mean (tested) accuracy of understanding and self-rated accuracy of understanding, the linear model best fit line is shown in red</p>
+</div>
+
+And we use boxplots, like the example shown in 
+Figure \@ref(fig:boxplot-eg), to examine the ways in which values of a numeric variable (e.g., mean accuracy of understanding) may differ, on average, between different groups or different levels of a factor. 
+
+<div class="figure" style="text-align: center">
+<img src="02-PSYC122-part-2-week-17_files/figure-html/boxplot-eg-1.png" alt="A boxplot showing the distribution of mean accuracy scores in the study one dataset, in different self-reported ethnicities (groups defined by the Office of National Statistics)" width="60%" />
+<p class="caption">(\#fig:boxplot-eg)A boxplot showing the distribution of mean accuracy scores in the study one dataset, in different self-reported ethnicities (groups defined by the Office of National Statistics)</p>
+</div>
+
+In  the lecture, I explain how we can learn some lessons about the use of data-based visualizations in scientific communication in the recent COVID-19 pandemic, how the science of visualization emerged, and some of the psychological ideas that lie behind more effective visualization methods.
+
+Everyone needs to learn how to produce and consume data visualizations.
+
+#### Learning to learn (R)
+
+My advice about learning R is to see the challenge as something like the challenge of learning a new language.
+
+I think it is important, maybe *really* important, to see R -- and the community resources provided for and by R users -- as presenting an example of a revolution in how knowledge is produced and shared.
+
+We teach R partly because it is a very powerful language, or set of data analysis tools, partly because it is very popular in science, and (for me, at least) partly because it presents an inspirational, revolutionary, example of *how people can collectively build communities of knowledge*.
+
+Every professional data analyst benefits everyday from the freedom of R -- the wealth of free resources, the openness of the language development.
+I would encourage you to begin to learn about how you can find, access and exploit the resources people have contributed.
+
+For example, the central `ggplot()` documentation can be found here:
+
+[The main ggplot resources](https://ggplot2.tidyverse.org){target="_blank"}
+
+A good way to think about the resources available for free online is this:
+
+**In R, every problem you ever have has been resolved, every question you ask has been answered, and someone has written a blog post about it.**
 
 ## Readings
 
@@ -227,9 +286,10 @@ Or you can download it from the module Moodle page for PSYC122, the **Week 17 re
 We will take things step-by-step.
 We will split .R scripts into parts, tasks and questions:  
 
-- different parts for different phases of the analysis workflow;
-- different tasks for different steps in each phase;
-- different questions to examine different ideas or coding steps.
+The activity tasks are designed to build skills in key data visualization methods, and to start the process of using statistical tests (like correlation) to address the **Clearly understood** research questions.
+
+The focus is on learning how to edit visualization code, step-by-step.
+Taking this approach will help to support learning about what elements in the code you can change, and how.
 
 ### Tasks
 
@@ -261,19 +321,19 @@ This process of adapting demonstration code is a process critical to data litera
 Each of the data files we will work with has a similar structure.
 
 ```r
-head(study.two.gen)
+head(study.one.general)
 ```
 
 ```
 ## # A tibble: 6 x 12
 ##   participant_ID mean.acc mean.self study     AGE SHIPLEY  HLVA FACTOR3 QRITOTAL
 ##   <chr>             <dbl>     <dbl> <chr>   <dbl>   <dbl> <dbl>   <dbl>    <dbl>
-## 1 studytwo.1        0.411      6.07 studyt…    26      27     6      50        9
-## 2 studytwo.10       0.607      8.5  studyt…    38      24     9      58       15
-## 3 studytwo.100      0.875      8.93 studyt…    66      40    13      60       20
-## 4 studytwo.101      0.964      8.5  studyt…    21      31    11      59       14
-## 5 studytwo.102      0.714      7.07 studyt…    74      35     7      52       18
-## 6 studytwo.103      0.768      5.07 studyt…    18      40    11      54       15
+## 1 studyone.1         0.49      7.96 studyo…    34      33     7      53       11
+## 2 studyone.10        0.85      7.28 studyo…    25      33     7      60       11
+## 3 studyone.100       0.82      7.36 studyo…    43      40     8      46       12
+## 4 studyone.101       0.94      7.88 studyo…    46      33    11      51       15
+## 5 studyone.102       0.58      6.96 studyo…    18      32     3      51       12
+## 6 studyone.103       0.84      7.88 studyo…    19      37    13      45       19
 ## # … with 3 more variables: GENDER <chr>, EDUCATION <chr>, ETHNICITY <chr>
 ```
 

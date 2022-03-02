@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>4 PSYC122 Part 2 Week 18 | Statistics for Psychologists</title>
+  <meta name="description" content="Course content for PSYC121 and PSYC122 at Lancaster University" />
+  <meta name="generator" content="bookdown 0.22 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="4 PSYC122 Part 2 Week 18 | Statistics for Psychologists" />
+  <meta property="og:type" content="book" />
+  
+  
+  <meta property="og:description" content="Course content for PSYC121 and PSYC122 at Lancaster University" />
+  <meta name="github-repo" content="https://github.com/robayedavies/PSYC122-part-2.git" />
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="4 PSYC122 Part 2 Week 18 | Statistics for Psychologists" />
+  
+  <meta name="twitter:description" content="Course content for PSYC121 and PSYC122 at Lancaster University" />
+  
+
+<meta name="author" content="John Towse, Tom Beesley, Margriet Groen, Rob Davies" />
+
+
+<meta name="date" content="2022-02-25" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="psyc122-part-2-week-17.html"/>
+
+<script src="libs/header-attrs-2.9/header-attrs.js"></script>
+<script src="libs/jquery-2.2.3/jquery.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.0.1/anchor-sections.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.0.1/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">PSYC122 -- part 2</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction</a></li>
+<li class="chapter" data-level="2" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html"><i class="fa fa-check"></i><b>2</b> PSYC122 Part 2 Week 16</a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#welcome"><i class="fa fa-check"></i><b>2.1</b> Welcome</a></li>
+<li class="chapter" data-level="2.2" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#our-learning-goals"><i class="fa fa-check"></i><b>2.2</b> Our learning goals</a></li>
+<li class="chapter" data-level="2.3" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#resources-for-you"><i class="fa fa-check"></i><b>2.3</b> Resources for you</a></li>
+<li class="chapter" data-level="2.4" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#lectures-video-recordings"><i class="fa fa-check"></i><b>2.4</b> Lectures: video recordings</a></li>
+<li class="chapter" data-level="2.5" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#readings"><i class="fa fa-check"></i><b>2.5</b> Readings</a></li>
+<li class="chapter" data-level="2.6" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#pre-lab-activity-1"><i class="fa fa-check"></i><b>2.6</b> Pre-lab activity 1</a>
+<ul>
+<li class="chapter" data-level="2.6.1" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#survey-information"><i class="fa fa-check"></i><b>2.6.1</b> Survey information</a></li>
+</ul></li>
+<li class="chapter" data-level="2.7" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#pre-lab-activity-1-alternative"><i class="fa fa-check"></i><b>2.7</b> Pre-lab activity 1 alternative</a></li>
+<li class="chapter" data-level="2.8" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#pre-lab-activity-2-getting-ready-for-the-lab-class"><i class="fa fa-check"></i><b>2.8</b> Pre-lab activity 2: Getting ready for the lab class</a>
+<ul>
+<li class="chapter" data-level="2.8.1" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#get-your-files-ready"><i class="fa fa-check"></i><b>2.8.1</b> Get your files ready</a></li>
+<li class="chapter" data-level="2.8.2" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#review-the-how-to-guide"><i class="fa fa-check"></i><b>2.8.2</b> Review the how-to guide</a></li>
+</ul></li>
+<li class="chapter" data-level="2.9" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#lab-activity"><i class="fa fa-check"></i><b>2.9</b> Lab activity</a>
+<ul>
+<li class="chapter" data-level="2.9.1" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#what-is-in-the-activity-.r-file"><i class="fa fa-check"></i><b>2.9.1</b> What is in the activity .R file?</a></li>
+<li class="chapter" data-level="2.9.2" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#tasks"><i class="fa fa-check"></i><b>2.9.2</b> Tasks</a></li>
+<li class="chapter" data-level="2.9.3" data-path="psyc122-part-2-week-16.html"><a href="psyc122-part-2-week-16.html#what-is-in-the-data-files"><i class="fa fa-check"></i><b>2.9.3</b> What is in the data files</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html"><i class="fa fa-check"></i><b>3</b> PSYC122 Part 2 Week 17</a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#welcome-1"><i class="fa fa-check"></i><b>3.1</b> Welcome</a></li>
+<li class="chapter" data-level="3.2" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#our-learning-goals-1"><i class="fa fa-check"></i><b>3.2</b> Our learning goals</a></li>
+<li class="chapter" data-level="3.3" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#resources-for-you-1"><i class="fa fa-check"></i><b>3.3</b> Resources for you</a></li>
+<li class="chapter" data-level="3.4" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#lectures-video-recordings-1"><i class="fa fa-check"></i><b>3.4</b> Lectures: video recordings</a>
+<ul>
+<li class="chapter" data-level="3.4.1" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#whats-in-the-lectures"><i class="fa fa-check"></i><b>3.4.1</b> What’s in the lectures</a></li>
+</ul></li>
+<li class="chapter" data-level="3.5" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#readings-1"><i class="fa fa-check"></i><b>3.5</b> Readings</a></li>
+<li class="chapter" data-level="3.6" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#pre-lab-activity-1-1"><i class="fa fa-check"></i><b>3.6</b> Pre-lab activity 1</a>
+<ul>
+<li class="chapter" data-level="3.6.1" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#survey-information-1"><i class="fa fa-check"></i><b>3.6.1</b> Survey information</a></li>
+</ul></li>
+<li class="chapter" data-level="3.7" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#pre-lab-activity-1-alternative-1"><i class="fa fa-check"></i><b>3.7</b> Pre-lab activity 1 alternative</a></li>
+<li class="chapter" data-level="3.8" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#pre-lab-activity-2-getting-ready-for-the-lab-class-1"><i class="fa fa-check"></i><b>3.8</b> Pre-lab activity 2: Getting ready for the lab class</a>
+<ul>
+<li class="chapter" data-level="3.8.1" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#get-your-files-ready-1"><i class="fa fa-check"></i><b>3.8.1</b> Get your files ready</a></li>
+<li class="chapter" data-level="3.8.2" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#review-the-how-to-guide-1"><i class="fa fa-check"></i><b>3.8.2</b> Review the how-to guide</a></li>
+</ul></li>
+<li class="chapter" data-level="3.9" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#lab-activity-1"><i class="fa fa-check"></i><b>3.9</b> Lab activity</a>
+<ul>
+<li class="chapter" data-level="3.9.1" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#what-is-in-the-activity-.r-file-1"><i class="fa fa-check"></i><b>3.9.1</b> What is in the activity .R file?</a></li>
+<li class="chapter" data-level="3.9.2" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#tasks-1"><i class="fa fa-check"></i><b>3.9.2</b> Tasks</a></li>
+<li class="chapter" data-level="3.9.3" data-path="psyc122-part-2-week-17.html"><a href="psyc122-part-2-week-17.html#what-is-in-the-data-files-1"><i class="fa fa-check"></i><b>3.9.3</b> What is in the data files</a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html"><i class="fa fa-check"></i><b>4</b> PSYC122 Part 2 Week 18</a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#welcome-2"><i class="fa fa-check"></i><b>4.1</b> Welcome</a></li>
+<li class="chapter" data-level="4.2" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#our-learning-goals-2"><i class="fa fa-check"></i><b>4.2</b> Our learning goals</a></li>
+<li class="chapter" data-level="4.3" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#resources-for-you-2"><i class="fa fa-check"></i><b>4.3</b> Resources for you</a></li>
+<li class="chapter" data-level="4.4" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#lectures-video-recordings-2"><i class="fa fa-check"></i><b>4.4</b> Lectures: video recordings</a>
+<ul>
+<li class="chapter" data-level="4.4.1" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#whats-in-the-lectures-1"><i class="fa fa-check"></i><b>4.4.1</b> What’s in the lectures</a></li>
+</ul></li>
+<li class="chapter" data-level="4.5" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#readings-2"><i class="fa fa-check"></i><b>4.5</b> Readings</a></li>
+<li class="chapter" data-level="4.6" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#pre-lab-activity-1-2"><i class="fa fa-check"></i><b>4.6</b> Pre-lab activity 1</a>
+<ul>
+<li class="chapter" data-level="4.6.1" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#survey-information-2"><i class="fa fa-check"></i><b>4.6.1</b> Survey information</a></li>
+</ul></li>
+<li class="chapter" data-level="4.7" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#pre-lab-activity-1-alternative-2"><i class="fa fa-check"></i><b>4.7</b> Pre-lab activity 1 alternative</a></li>
+<li class="chapter" data-level="4.8" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#pre-lab-activity-2-getting-ready-for-the-lab-class-2"><i class="fa fa-check"></i><b>4.8</b> Pre-lab activity 2: Getting ready for the lab class</a>
+<ul>
+<li class="chapter" data-level="4.8.1" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#get-your-files-ready-2"><i class="fa fa-check"></i><b>4.8.1</b> Get your files ready</a></li>
+<li class="chapter" data-level="4.8.2" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#review-the-how-to-guide-2"><i class="fa fa-check"></i><b>4.8.2</b> Review the how-to guide</a></li>
+</ul></li>
+<li class="chapter" data-level="4.9" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#lab-activity-2"><i class="fa fa-check"></i><b>4.9</b> Lab activity</a>
+<ul>
+<li class="chapter" data-level="4.9.1" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#what-is-in-the-activity-.r-file-2"><i class="fa fa-check"></i><b>4.9.1</b> What is in the activity .R file?</a></li>
+<li class="chapter" data-level="4.9.2" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#tasks-2"><i class="fa fa-check"></i><b>4.9.2</b> Tasks</a></li>
+<li class="chapter" data-level="4.9.3" data-path="psyc122-part-2-week-18.html"><a href="psyc122-part-2-week-18.html#what-is-in-the-data-files-2"><i class="fa fa-check"></i><b>4.9.3</b> What is in the data files</a></li>
+</ul></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://github.com/rstudio/bookdown" target="blank">Published with bookdown</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Statistics for Psychologists</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="psyc122-part-2-week-18" class="section level1" number="4">
+<h1><span class="header-section-number">4</span> PSYC122 Part 2 Week 18</h1>
+<div id="welcome-2" class="section level2" number="4.1">
+<h2><span class="header-section-number">4.1</span> Welcome</h2>
+<p>Welcome to your overview of the materials and guidance you will work with in <strong>PSYC122 Week 18</strong>.</p>
+<p>We will complete four classes in weeks 16-19.
+These classes are designed to help students to revise and put into practice some of the key ideas and skills you have been developing in the first year research methods modules <em>PSYC121, PSYC123 and PSYC124</em>.</p>
+<p>We will do this in the context of a live research project with potential real world impacts: the <strong>Clearly understood</strong> project.
+Our focus will be on <strong>what makes it easy or difficult for people to understand written health information</strong>.
+In these classes, we will complete a research project to answer the research questions:</p>
+<ol style="list-style-type: decimal">
+<li>What person attributes predict success in understanding?</li>
+<li>Can people accurately evaluate whether they correctly understand written health information?</li>
+</ol>
+<p>We will be revisiting some of the ideas and techniques you have seen introduced in previous classes.
+And we will be extending your development with some new ideas, to strengthen your skills.</p>
+<p>Ultimately, we aim to contribute new findings from the data we will collect together.
+These new findings will, we hope, help to make the provision of health advice a bit more useful in future.</p>
+</div>
+<div id="our-learning-goals-2" class="section level2" number="4.2">
+<h2><span class="header-section-number">4.2</span> Our learning goals</h2>
+<p>In Week 18, we will ask you to do two things.</p>
+<ol style="list-style-type: decimal">
+<li>We will consolidate and <em>extend</em> learning on data visualization:</li>
+</ol>
+<ul>
+<li>Use histograms to examine the distributions of variables;</li>
+<li>Use boxplots to examine the differences between groups on a variable;</li>
+<li>Use scatterplots to examine how values on one variable relate to values on another variable;</li>
+<li>Learn to edit the scatterplots;</li>
+<li>Learn to edit the histograms.</li>
+</ul>
+<ol start="2" style="list-style-type: decimal">
+<li>We will also do some revision on using the correlation test to examine associations between variables.</li>
+</ol>
+<p>We will do this in the context of the health comprehension <strong>Clearly understood</strong> project so that you can see an example of how psychological science proceeds from the statement of research questions to tests of potential answers to those questions in data analysis.</p>
+</div>
+<div id="resources-for-you-2" class="section level2" number="4.3">
+<h2><span class="header-section-number">4.3</span> Resources for you</h2>
+<p>You will see – below – links to the lectures, information about the data we will analyze, and an explanation of the activities.</p>
+<p>All the links to the lectures, and everything you need for your practical work class can <em>also</em> be found under the <strong>Week 18 resources</strong> section title, on Moodle:</p>
+<p><a href="https://modules.lancaster.ac.uk/course/view.php?id=35319#section-9" target="_blank">Link to Moodle</a></p>
+</div>
+<div id="lectures-video-recordings-2" class="section level2" number="4.4">
+<h2><span class="header-section-number">4.4</span> Lectures: video recordings</h2>
+<p>The lecture material for this week is presented in three parts.
+Click on a link and your browser should open a tab showing the <em>Panopto</em> video for the lecture part.
+(You will need to be on campus or logged in to the university VPN to get access to the videos.)</p>
+<p><a href="https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=760dac7f-3556-4abd-bbc5-ae4b00f1a0ab" target="_blank">Part 1 of 3</a></p>
+<p><a href="https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=d6a2b6f8-d58a-49cf-8e7d-ae4b00f7af05" target="_blank">Part 2 of 3</a></p>
+<p><a href="https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=e9a332e3-3d5d-4dcc-8cfc-ae4b00fcef0b" target="_blank">Part 3 of 3</a></p>
+<div id="whats-in-the-lectures-1" class="section level3" number="4.4.1">
+<h3><span class="header-section-number">4.4.1</span> What’s in the lectures</h3>
+<p>The lectures have three main areas of focus.</p>
+<div id="understanding-the-scientific-process-1" class="section level4" number="4.4.1.1">
+<h4><span class="header-section-number">4.4.1.1</span> Understanding the scientific process</h4>
+<p>I suggest that learning about how psychologists ask and answer research questions is key to learning about psychological science.</p>
+<p>I outline the way in which, in the <strong>clearly understood</strong> project, we chose our data collection measures – our theory-based selection of the things we decided to measure – and I discuss how the data analysis we can do <em>follows</em> a series of logical steps: from question, to hypothesis, to analysis.</p>
+<p>I encourage you to begin reflecting on the ways in which, as scientists, you can <strong>critically evaluate this logic, these choices</strong>.</p>
+</div>
+<div id="data-visualization-1" class="section level4" number="4.4.1.2">
+<h4><span class="header-section-number">4.4.1.2</span> Data visualization</h4>
+<p>Effective data visualization is a core competence in modern work – in any professional field – I look at why, what <em>effective</em> data visualization is, and how we do it.</p>
+<p>We will be learning <em>practical</em> coding skills, so that you can produce visualizations, but I put this work in context, relating our approach to the Exploratory Data Analysis approach developed by John Tukey and others.</p>
+<p>We want you to actively, reflectively, interrogate or read the plots you make, so that you can use them to get insight into data.</p>
+<p>I introduce or remind you about three kinds of plots.</p>
+<p>We use histograms like the example shown in Figure <a href="psyc122-part-2-week-18.html#fig:hist-eg">4.1</a> to examine the distributions of observed values in a variable.</p>
+<div class="figure" style="text-align: center"><span id="fig:hist-eg"></span>
+<img src="03-PSYC122-part-2-week-18_files/figure-html/hist-eg-1.png" alt="A histogram showing the distribution of mean accuracy scores in the study one dataset, the average is shown at the red line" width="60%" />
+<p class="caption">
+Figure 4.1: A histogram showing the distribution of mean accuracy scores in the study one dataset, the average is shown at the red line
+</p>
+</div>
+<p>We use scatterplots, like the example shown in Figure <a href="psyc122-part-2-week-18.html#fig:scatterplot-eg">4.2</a>, to examine a potential association between two variables.</p>
+<div class="figure" style="text-align: center"><span id="fig:scatterplot-eg"></span>
+<img src="03-PSYC122-part-2-week-18_files/figure-html/scatterplot-eg-1.png" alt="A scatterplot showing the potential association between mean (tested) accuracy of understanding and self-rated accuracy of understanding, the linear model best fit line is shown in red" width="60%" />
+<p class="caption">
+Figure 4.2: A scatterplot showing the potential association between mean (tested) accuracy of understanding and self-rated accuracy of understanding, the linear model best fit line is shown in red
+</p>
+</div>
+<p>And we use boxplots, like the example shown in
+Figure <a href="psyc122-part-2-week-18.html#fig:boxplot-eg">4.3</a>, to examine the ways in which values of a numeric variable (e.g., mean accuracy of understanding) may differ, on average, between different groups or different levels of a factor.</p>
+<div class="figure" style="text-align: center"><span id="fig:boxplot-eg"></span>
+<img src="03-PSYC122-part-2-week-18_files/figure-html/boxplot-eg-1.png" alt="A boxplot showing the distribution of mean accuracy scores in the study one dataset, in different self-reported ethnicities (groups defined by the Office of National Statistics)" width="60%" />
+<p class="caption">
+Figure 4.3: A boxplot showing the distribution of mean accuracy scores in the study one dataset, in different self-reported ethnicities (groups defined by the Office of National Statistics)
+</p>
+</div>
+<p>In the lecture, I explain how we can learn some lessons about the use of data-based visualizations in scientific communication in the recent COVID-19 pandemic, how the science of visualization emerged, and some of the psychological ideas that lie behind more effective visualization methods.</p>
+<p>Everyone needs to learn how to produce and consume data visualizations.</p>
+</div>
+<div id="learning-to-learn-r-1" class="section level4" number="4.4.1.3">
+<h4><span class="header-section-number">4.4.1.3</span> Learning to learn (R)</h4>
+<p>My advice about learning R is to see the challenge as something like the challenge of learning a new language.</p>
+<p>I think it is important, maybe <em>really</em> important, to see R – and the community resources provided for and by R users – as presenting an example of a revolution in how knowledge is produced and shared.</p>
+<p>We teach R partly because it is a very powerful language, or set of data analysis tools, partly because it is very popular in science, and (for me, at least) partly because it presents an inspirational, revolutionary, example of <em>how people can collectively build communities of knowledge</em>.</p>
+<p>Every professional data analyst benefits everyday from the freedom of R – the wealth of free resources, the openness of the language development.
+I would encourage you to begin to learn about how you can find, access and exploit the resources people have contributed.</p>
+<p>For example, the central <code>ggplot()</code> documentation can be found here:</p>
+<p><a href="https://ggplot2.tidyverse.org" target="_blank">The main ggplot resources</a></p>
+<p>A good way to think about the resources available for free online is this:</p>
+<p><strong>In R, every problem you ever have has been resolved, every question you ask has been answered, and someone has written a blog post about it.</strong></p>
+</div>
+</div>
+</div>
+<div id="readings-2" class="section level2" number="4.5">
+<h2><span class="header-section-number">4.5</span> Readings</h2>
+<p>We do not provide further reading but you may find it helpful to take another look at the readings provided, previously, for your classes in weeks 11-13.</p>
+</div>
+<div id="pre-lab-activity-1-2" class="section level2" number="4.6">
+<h2><span class="header-section-number">4.6</span> Pre-lab activity 1</h2>
+<p>In weeks 16-19, we will be working together on a research project to investigate how people vary in their response to health advice.
+Completing the project involves collecting responses from PSYC122 students.
+In our class activities, we can then analyze the data we collect.</p>
+<p>To enter your responses, we invite you to complete a short survey.
+You can complete the survey here <em>if you have not already done so</em>:</p>
+<p><a href="https://lancasteruni.eu.qualtrics.com/jfe/form/SV_0ww8HHxx172TPJs" target="_blank">Complete the survey</a></p>
+<p>If you <em>have</em> done this once, do not do it again.</p>
+<div id="survey-information-2" class="section level3" number="4.6.1">
+<h3><span class="header-section-number">4.6.1</span> Survey information</h3>
+<p>The survey asks you to:</p>
+<ul>
+<li>complete some questions about who you are;</li>
+<li>and then answer some questions about what you know about some English words, about what you know about health matters, and about how you approach reading.</li>
+</ul>
+<p>The survey then asks you to:</p>
+<ul>
+<li>read five short extracts from patient information leaflets about different kinds of health issue;</li>
+<li>respond to some multiple choice questions about each extract;</li>
+<li>and rate how well you think you understand the advice.</li>
+</ul>
+<p>The survey should take about 20 minutes to complete.
+Some people will take less time, and some people might take a little more time.</p>
+<p>Taking part in the survey is <strong>completely voluntary</strong>.
+You can stop at any time without completing the survey if you do not want to finish it.
+If you do not want to do the survey, you can do an alternative activity (see below).</p>
+<p>All responses will be recorded completely anonymously.</p>
+</div>
+</div>
+<div id="pre-lab-activity-1-alternative-2" class="section level2" number="4.7">
+<h2><span class="header-section-number">4.7</span> Pre-lab activity 1 alternative</h2>
+<p>If you do not want to complete the survey, we invite you to read the pre-registered research plan for the <em>PSYC122 health advice</em> research project.</p>
+<p><a href="https://osf.io/p6fsc/" target="_blank">Read the project pre-registration</a></p>
+</div>
+<div id="pre-lab-activity-2-getting-ready-for-the-lab-class-2" class="section level2" number="4.8">
+<h2><span class="header-section-number">4.8</span> Pre-lab activity 2: Getting ready for the lab class</h2>
+<div id="get-your-files-ready-2" class="section level3" number="4.8.1">
+<h3><span class="header-section-number">4.8.1</span> Get your files ready</h3>
+<p>Download the <a href="files/week-18/122_week18_forStudents.zip">122_week18_forStudents.zip</a> files you need and upload them to your RStudio Server.</p>
+<p>The folder includes data files:</p>
+<ul>
+<li><code>study-one-general-participants.csv</code></li>
+<li><code>study-two-general-participants.csv</code></li>
+</ul>
+<p>and code files:</p>
+<ul>
+<li><code>2021-22-PSYC122-w18-activity.R</code></li>
+<li><code>2021-22-PSYC122-w18-how-to.R</code></li>
+</ul>
+<p>You will use <code>2021-22-PSYC122-w18-activity.R</code> in the lab activity practical class.</p>
+</div>
+<div id="review-the-how-to-guide-2" class="section level3" number="4.8.2">
+<h3><span class="header-section-number">4.8.2</span> Review the how-to guide</h3>
+<p>We show you how to do everything you need to do in the lab activity (see the next section) in the <code>how-to</code> guide.</p>
+<p>The guide comprises an .R file <code>2021-22-PSYC122-w18-how-to.R</code> with code and advice, and a video showing you how the code works.
+The code in the .R file was written to work with the data file <code>study-one-general-participants.csv</code>.</p>
+<p>In the video, I work my way through the R code, step-by-step, explaining what each line of code does.
+Watching the video takes about 25 minutes.
+It is completely optional but I have provided the video because students have told us they find it useful.</p>
+<p><a href="https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=e7576f79-58c0-4a02-9474-ae4c00ad3cf2" target="_blank">Watch the how-to guide</a></p>
+</div>
+</div>
+<div id="lab-activity-2" class="section level2" number="4.9">
+<h2><span class="header-section-number">4.9</span> Lab activity</h2>
+<p>In the lab activity .R file <code>2021-22-PSYC122-w18-activity.R</code>, you will work with data from a study about how people respond to guidance about a variety of health topics (general topics):</p>
+<ul>
+<li><code>study-two-general-participants.csv</code></li>
+</ul>
+<p>The data are similar in format to the response data we are collecting as part of the PSYC122 project.</p>
+<p>The activity .R file and the data .csv file can be downloaded from:</p>
+<p><a href="files/week-18/122_week18_forStudents.zip">122_week18_forStudents.zip</a></p>
+<p>Or you can download it from the module Moodle page for PSYC122, the <strong>Week 18 resources</strong> section:</p>
+<p><a href="https://modules.lancaster.ac.uk/course/view.php?id=35319#section-9" target="_blank">Link to Moodle</a></p>
+<div id="what-is-in-the-activity-.r-file-2" class="section level3" number="4.9.1">
+<h3><span class="header-section-number">4.9.1</span> What is in the activity .R file?</h3>
+<p>We will take things step-by-step.
+We will split .R scripts into parts, tasks and questions:</p>
+<p>The activity tasks are designed to build skills in key data visualization methods, and to start the process of using statistical tests (like correlation) to address the <strong>Clearly understood</strong> research questions.</p>
+<p>The focus is on learning how to edit visualization code, step-by-step.
+Taking this approach will help to support learning about what elements in the code you can change, and how.</p>
+</div>
+<div id="tasks-2" class="section level3" number="4.9.2">
+<h3><span class="header-section-number">4.9.2</span> Tasks</h3>
+<p>In the activity, we are going to work through the following tasks.</p>
+<ol style="list-style-type: decimal">
+<li>Empty the R environment – using <code>rm(list=ls())</code></li>
+<li>Load relevant libraries – using <code>library()</code></li>
+<li>Read in the data file – using <code>read_csv()</code></li>
+<li>Inspect the data – using <code>head()</code> and <code>summary()</code></li>
+<li>Create basic scatterplots – using <code>ggplot()</code> and <code>geom_point()</code></li>
+<li>Edit the appearance of plots – using <code>alpha</code>, <code>size</code>, <code>theme_bw()</code> and <code>labs()</code></li>
+<li>Edit the appearance of plots – using <code>xlim()</code> and <code>ylim()</code></li>
+<li>Draw histograms to examine the distributions of variables – using <code>ggplot()</code> and <code>geom_histogram()</code></li>
+<li>Edit the appearance of <em>one variable</em> histogram plot step-by-step</li>
+<li>Test a correlation using <code>cor.test()</code></li>
+</ol>
+<p>The activity <code>2021-22-PSYC122-w18-activity.R</code> file takes you through the tasks, one by one.</p>
+<p>If you are unsure about what you need to do, check in the <code>how-to</code> guide: look at the advice in <code>2021-22-PSYC122-w18-how-to.R</code> or watch the accompanying video.</p>
+<p>You will see that you can match a task in the <code>activity</code> to the same task in the <code>how-to</code>.
+The <code>how-to</code> shows you what function you need and how you should write the function code.
+You will need to change the names of the dataset or the variables to complete the tasks in the activity.</p>
+<p>This process of adapting demonstration code is a process critical to data literacy and to effective problem solving in working with data in psychological science.</p>
+</div>
+<div id="what-is-in-the-data-files-2" class="section level3" number="4.9.3">
+<h3><span class="header-section-number">4.9.3</span> What is in the data files</h3>
+<p>Each of the data files we will work with has a similar structure.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb5-1"><a href="psyc122-part-2-week-18.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">head</span>(study.one.general)</span></code></pre></div>
+<pre><code>## # A tibble: 6 x 12
+##   participant_ID mean.acc mean.self study     AGE SHIPLEY  HLVA FACTOR3 QRITOTAL
+##   &lt;chr&gt;             &lt;dbl&gt;     &lt;dbl&gt; &lt;chr&gt;   &lt;dbl&gt;   &lt;dbl&gt; &lt;dbl&gt;   &lt;dbl&gt;    &lt;dbl&gt;
+## 1 studyone.1         0.49      7.96 studyo…    34      33     7      53       11
+## 2 studyone.10        0.85      7.28 studyo…    25      33     7      60       11
+## 3 studyone.100       0.82      7.36 studyo…    43      40     8      46       12
+## 4 studyone.101       0.94      7.88 studyo…    46      33    11      51       15
+## 5 studyone.102       0.58      6.96 studyo…    18      32     3      51       12
+## 6 studyone.103       0.84      7.88 studyo…    19      37    13      45       19
+## # … with 3 more variables: GENDER &lt;chr&gt;, EDUCATION &lt;chr&gt;, ETHNICITY &lt;chr&gt;</code></pre>
+<p>You can see the columns:</p>
+<ul>
+<li><code>participant_ID</code> participant code</li>
+<li><code>mean.acc</code> average accuracy of response to questions testing understanding of health guidance</li>
+<li><code>mean.self</code> average self-rated accuracy of understanding of health guidance</li>
+<li><code>study</code> varianble coding for what study the data were collected in</li>
+<li><code>AGE</code> age in years</li>
+<li><code>HLVA</code> health literacy test score</li>
+<li><code>SHIPLEY</code> vocabulary knowledge test score</li>
+<li><code>FACTOR3</code> reading strategy survey score</li>
+<li><code>GENDER</code> gender code</li>
+<li><code>EDUCATION</code> education level code</li>
+<li><code>ETHNICITY</code> ethnicity (Office National Statistics categories) code</li>
+</ul>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="psyc122-part-2-week-17.html" class="navigation navigation-prev navigation-unique" aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/lunr.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": null,
+"toc": {
+"collapse": "subsection"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

@@ -72,3 +72,6 @@ lab-activity-2
 what-is-in-the-activity-.r-file-2
 tasks-2
 what-is-in-the-data-files-2
+fig:ridges
+the-linear-model
+fig:lm-show-model-residuals

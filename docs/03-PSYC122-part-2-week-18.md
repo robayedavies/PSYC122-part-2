@@ -8,6 +8,14 @@ output:
 
 
 ```
+## Warning: package 'ggExtra' was built under R version 4.1.1
+```
+
+```
+## Warning: package 'ggridges' was built under R version 4.1.1
+```
+
+```
 ## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
 ```
 
@@ -88,19 +96,24 @@ These new findings will, we hope, help to make the provision of health advice a 
 
 ## Our learning goals
 
-In Week 18, we will ask you to do two things.
+In Week 18, we aim to further develop skills in analyzing *and* in visualizing psychological data.
 
-1. We will consolidate and *extend* learning on data visualization:
+1. Research questions like our questions can often be answered through analyses using linear models.
 
-- Use histograms to examine the distributions of variables;
-- Use boxplots to examine the differences between groups on a variable;
-- Use scatterplots to examine how values on one variable relate to values on another variable;
-- Learn to edit the scatterplots;
-- Learn to edit the histograms.
+When we do these analyses, we will need to think about how we report the results:  
 
-2. We will also do some revision on using the correlation test to examine associations between variables. 
+- we usually need to report information about the kind of model we specify;
+- we will need to report the nature of the association estimated in our model;
+- and we usually need to decide, is the association significant?
+- does the association reflect a positive or negative relationship between outcome and predictor?
+- is the association we see in our sample data relatively strong or weak?
 
-We will do this in the context of the health comprehension **Clearly understood** project so that you can see an example of how psychological science proceeds from the statement of research questions to tests of potential answers to those questions in data analysis.
+2. As we work, we will develop skills in producing appealing plots for professional audiences. 
+
+At every stage, as we work, we will visualize the data to:
+
+- Understand the shape of the relationships we may observe or predict;
+- Evaluate our data so that we can consider the limits or biases in our sample.
 
 ## Resources for you
 
@@ -124,70 +137,71 @@ Click on a link and your browser should open a tab showing the *Panopto* video f
 
 ### What's in the lectures
 
-The lectures have three main areas of focus.
+The lectures have two main areas of focus.
 
 #### Understanding the scientific process
 
-I suggest that learning about how psychologists ask and answer research questions is key to learning about psychological science.
+I outline the steps through which a psychological scientist may progress, in logic and practice, from research questions to hypotheses to analyses.
 
-I outline the way in which, in the **clearly understood** project, we chose our data collection measures -- our theory-based selection of the things we decided to measure -- and I discuss how the data analysis we can do *follows* a series of logical steps: from question, to hypothesis, to analysis. 
+I rehearse some of the key points I have discussed, previously, in order to build a framework in which you can understand how we go from a set of concerns -- here, *What makes it easy or difficult to understand written health information?* -- through choices about what data to collect, and how -- to specific questions, and then predictions, that we can test using linear models.
 
-I encourage you to begin reflecting on the ways in which, as scientists, you can **critically evaluate this logic, these choices**.
+We are learning data analysis methods.
+But the key point is that we use these methods in the context of a research project with concerns, aims, methodological assumptions, and choices.
+This is generally true so the aim is to present a concrete example of how research works.
 
-#### Data visualization
+As part of the discussion, I raise questions you might want to consider, as you work with your data analysis practices.
+These questions -- and questions you can originate for yourselves -- are also part of the context for our data analysis, because they help to inform how you interpret or evaluate the results.
+These questions are examples of the *critical evaluation* that you will need to develop through your studies.
 
-Effective data visualization is a core competence in modern work -- in any professional field -- I look at why, what *effective* data visualization is, and how we do it.
+#### The linear model
 
-We will be learning *practical* coding skills, so that you can produce visualizations, but I put this work in context, relating our approach to the Exploratory Data Analysis approach developed by John Tukey and others.
+We look at how the linear model can be used to address research questions in the context of the **Clearly understood** health comprehension project.
+But I aim to outline some general ideas about why we use the linear model technique, and how it works.
+The linear model is central to data analysis practice -- you can say that other methods, like ANOVA, are simply kinds of linear model -- and so the topic merits some investment in time.
+I build on work you have done with Margriet Groen in earlier PSYC122 classes, so that we can strengthen understanding, and extend practical skills.
 
-We want you to actively, reflectively, interrogate or read the plots you make, so that you can use them to get insight into data.
-
-I introduce or remind you about three kinds of plots.
-
-We use histograms like the example shown in Figure \@ref(fig:hist-eg) to examine the distributions of observed values in a variable.
-
-<div class="figure" style="text-align: center">
-<img src="03-PSYC122-part-2-week-18_files/figure-html/hist-eg-1.png" alt="A histogram showing the distribution of mean accuracy scores in the study one dataset, the average is shown at the red line" width="60%" />
-<p class="caption">(\#fig:hist-eg)A histogram showing the distribution of mean accuracy scores in the study one dataset, the average is shown at the red line</p>
-</div>
-
-We use scatterplots, like the example shown in Figure \@ref(fig:scatterplot-eg), to examine a potential association between two variables.
+In the lectures, I talk about how we use the linear model to estimate the association between variables -- an outcome like mean accuracy of understanding and a predictor like vocabulary knowledge -- estimating the *expected* change in average outcome, given variation in the predictor.
+In the plot on the right of Figure \@ref(fig:ridges), we show the distribution curve of mean (comprehension) accuracy scores observed at each value of vocabulary
+You can see that the middle -- the average -- of each distribution, marked by a line, increases as we go from left (low scores) to right (high scores).
 
 <div class="figure" style="text-align: center">
-<img src="03-PSYC122-part-2-week-18_files/figure-html/scatterplot-eg-1.png" alt="A scatterplot showing the potential association between mean (tested) accuracy of understanding and self-rated accuracy of understanding, the linear model best fit line is shown in red" width="60%" />
-<p class="caption">(\#fig:scatterplot-eg)A scatterplot showing the potential association between mean (tested) accuracy of understanding and self-rated accuracy of understanding, the linear model best fit line is shown in red</p>
+<img src="03-PSYC122-part-2-week-18_files/figure-html/ridges-1.png" alt="Plots showing the association between the outcome mean accuracy of understanding a predictor, vocabulary knowledge, with the plot on the right modified to show how accuracy of understanding varies between individuals in the sample with the sample vocabularytest scores" width="90%" />
+<p class="caption">(\#fig:ridges)Plots showing the association between the outcome mean accuracy of understanding a predictor, vocabulary knowledge, with the plot on the right modified to show how accuracy of understanding varies between individuals in the sample with the sample vocabularytest scores</p>
 </div>
 
-And we use boxplots, like the example shown in 
-Figure \@ref(fig:boxplot-eg), to examine the ways in which values of a numeric variable (e.g., mean accuracy of understanding) may differ, on average, between different groups or different levels of a factor. 
+I talk about the information we get from a linear model allows us to *predict* the way in which outcome values may vary (increase or decrease), given different values in the predictor variable.
+We could form a prediction line anywhere but the linear model helps us to estimate the prediction ("best fit") line that minimizes the differences between observed and predicted outcomes: *the residuals*.
 
 <div class="figure" style="text-align: center">
-<img src="03-PSYC122-part-2-week-18_files/figure-html/boxplot-eg-1.png" alt="A boxplot showing the distribution of mean accuracy scores in the study one dataset, in different self-reported ethnicities (groups defined by the Office of National Statistics)" width="60%" />
-<p class="caption">(\#fig:boxplot-eg)A boxplot showing the distribution of mean accuracy scores in the study one dataset, in different self-reported ethnicities (groups defined by the Office of National Statistics)</p>
+<img src="03-PSYC122-part-2-week-18_files/figure-html/lm-show-model-residuals-1.png" alt="Plot showing the prediction of mean accuracy of understanding, given information about participant vocabulary knowledge, with lines drawn to show the difference between observed outcomes (shown in orange-red) and predicted outcomes (shown as black circles on the blue line) for each vocabulary test score value in our sample" width="60%" />
+<p class="caption">(\#fig:lm-show-model-residuals)Plot showing the prediction of mean accuracy of understanding, given information about participant vocabulary knowledge, with lines drawn to show the difference between observed outcomes (shown in orange-red) and predicted outcomes (shown as black circles on the blue line) for each vocabulary test score value in our sample</p>
 </div>
 
-In  the lecture, I explain how we can learn some lessons about the use of data-based visualizations in scientific communication in the recent COVID-19 pandemic, how the science of visualization emerged, and some of the psychological ideas that lie behind more effective visualization methods.
+The lectures end with a discussion of the critical information you must identify and extract when you view the summary of a linear model results.
+I show you how to report the results.
+**I give you examples of the conventional language you can use to report your results.**
 
-Everyone needs to learn how to produce and consume data visualizations.
+Notice that, in reporting the results, we need to explain what they tell us about the association between outcome and predictor variables.
+And, in reporting results, we can use visualization to help us to interpret the model estimates.
+In the how-to guide and in the activity, we look at how you can draw prediction plots, given model estimates.
 
 #### Learning to learn (R)
 
 My advice about learning R is to see the challenge as something like the challenge of learning a new language.
+In this context, it is *really* important, to exploit the vast, rich, and free community resources provided for and by R users.
+These resources show us an example of the on-going revolution in how knowledge is produced and shared.
 
-I think it is important, maybe *really* important, to see R -- and the community resources provided for and by R users -- as presenting an example of a revolution in how knowledge is produced and shared.
+In the how-to guide and in the activity, I present further examples of the rich information you can access.
 
-We teach R partly because it is a very powerful language, or set of data analysis tools, partly because it is very popular in science, and (for me, at least) partly because it presents an inspirational, revolutionary, example of *how people can collectively build communities of knowledge*.
+For example, experiment with how to change the appearance of the points in scatterplots:
 
-Every professional data analyst benefits everyday from the freedom of R -- the wealth of free resources, the openness of the language development.
-I would encourage you to begin to learn about how you can find, access and exploit the resources people have contributed.
+[ggplot resources for scatterplots](https://ggplot2.tidyverse.org/reference/geom_point.html){target="_blank"}
 
-For example, the central `ggplot()` documentation can be found here:
+Or experiment with changing colours:
 
-[The main ggplot resources](https://ggplot2.tidyverse.org){target="_blank"}
+[resources on colours](http://www.cookbook-r.com/Graphs/Colors_(ggplot2)/){target="_blank"}
 
-A good way to think about the resources available for free online is this:
-
-**In R, every problem you ever have has been resolved, every question you ask has been answered, and someone has written a blog post about it.**
+In data visualization in R, experimenting with your choices, your code, is how you learn to develop coding skills, and, critically, how you learn what you prefer.
 
 ## Readings
 
@@ -205,6 +219,8 @@ You can complete the survey here *if you have not already done so*:
 [Complete the survey](https://lancasteruni.eu.qualtrics.com/jfe/form/SV_0ww8HHxx172TPJs){target="_blank"}
 
 If you *have* done this once, do not do it again.
+
+**I am going to analyse the data from the survey on Monday 7th March at 12pm so if you are interested in taking part, please do so by then.**
 
 ### Survey information
 
@@ -286,10 +302,7 @@ Or you can download it from the module Moodle page for PSYC122, the **Week 18 re
 We will take things step-by-step.
 We will split .R scripts into parts, tasks and questions:  
 
-The activity tasks are designed to build skills in key data visualization methods, and to start the process of using statistical tests (like correlation) to address the **Clearly understood** research questions.
-
-The focus is on learning how to edit visualization code, step-by-step.
-Taking this approach will help to support learning about what elements in the code you can change, and how.
+The activity tasks are designed to build skills in key data analysis and visualization methods, and to further develop the process of using statistical tests (like the linear model) to address the **Clearly understood** research questions.
 
 ### Tasks
 
@@ -299,12 +312,12 @@ In the activity, we are going to work through the following tasks.
 2. Load relevant libraries -- using `library()`
 3. Read in the data file -- using `read_csv()`
 4. Inspect the data -- using `head()` and `summary()`
-5. Create basic scatterplots -- using `ggplot()` and `geom_point()`
-6. Edit the appearance of plots -- using `alpha`, `size`, `theme_bw()` and `labs()`
-6. Edit the appearance of plots -- using `xlim()` and `ylim()`
-7. Draw histograms to examine the distributions of variables -- using `ggplot()` and `geom_histogram()`
-7. Edit the appearance of *one variable* histogram plot step-by-step
-8. Test a correlation using `cor.test()`
+5. Visualize the distribution of values -- using `geom_histogram()`
+5. Edit the appearance of plots -- using `xlim()`, `theme_bw()` and `labs()`
+6. Visualize the potential association between the values of two variables -- using `geom_point()`
+6. Edit the appearance of plots -- using `xlim()` and `ylim()`, and by entering `geom_point()` arguments that you can use to vary the transparency, size, colour, shape of points in a scatterplot
+7. Estimate the way in which an outcome may vary, given different values in a predictor variable -- using  `lm()`
+8. Visualize the model predictions -- using `geom_abline()` and information from the model results
 
 The activity `2021-22-PSYC122-w18-activity.R` file takes you through the tasks, one by one.
 
@@ -325,7 +338,7 @@ head(study.one.general)
 ```
 
 ```
-## # A tibble: 6 x 12
+## # A tibble: 6 x 14
 ##   participant_ID mean.acc mean.self study     AGE SHIPLEY  HLVA FACTOR3 QRITOTAL
 ##   <chr>             <dbl>     <dbl> <chr>   <dbl>   <dbl> <dbl>   <dbl>    <dbl>
 ## 1 studyone.1         0.49      7.96 studyo…    34      33     7      53       11
@@ -334,7 +347,8 @@ head(study.one.general)
 ## 4 studyone.101       0.94      7.88 studyo…    46      33    11      51       15
 ## 5 studyone.102       0.58      6.96 studyo…    18      32     3      51       12
 ## 6 studyone.103       0.84      7.88 studyo…    19      37    13      45       19
-## # … with 3 more variables: GENDER <chr>, EDUCATION <chr>, ETHNICITY <chr>
+## # … with 5 more variables: GENDER <chr>, EDUCATION <chr>, ETHNICITY <chr>,
+## #   predicted <dbl>, residuals <dbl>
 ```
 
 You can see the columns:

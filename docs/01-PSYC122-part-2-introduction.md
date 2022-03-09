@@ -292,3 +292,9 @@ You can see the columns:
 - `GENDER` gender code
 - `EDUCATION` education level code
 - `ETHNICITY` ethnicity (Office National Statistics categories) code
+
+### Answers
+
+You can download the answers version of the activity .R file [2021-22-PSYC122-w16-activity-answers.R](files/week-16/2021-22-PSYC122-w16-activity-answers.R)
+
+The answers version will present my answers for questions, and some extra information where that is helpful.

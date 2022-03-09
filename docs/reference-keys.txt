@@ -75,3 +75,5 @@ what-is-in-the-data-files-2
 fig:ridges
 the-linear-model
 fig:lm-show-model-residuals
+answers
+answers-1

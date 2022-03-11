@@ -98,3 +98,6 @@ what-is-in-the-activity-.r-file-3
 tasks-3
 what-is-in-the-data-files-3
 lab-activity-we-will-work-with-new-data-based-on-the-responses-of-psyc122-students
+scientific-thinking
+working-with-the-linear-model-with-multiple-predictors
+the-implications-of-our-results-the-revolution-in-open-science-and-being-part-of-it

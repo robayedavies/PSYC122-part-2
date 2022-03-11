@@ -94,9 +94,30 @@ Click on a link and your browser should open a tab showing the *Panopto* video f
 
 ### What's in the lectures
 
-The lectures have two main areas of focus.
+The lectures have three main areas of focus.
 
+#### Scientific thinking
 
+We shall proceed to answer our research questions with the data we have collected with the help of PSYC122 students.
+As we do this, we should reflect on where the data come from -- the choices made on data collection -- and we should consider, critically, questions concerning key ideas:
+
+- **Methods reproducibility** -- Will a different researcher be able to get the same results if they analyze the same data?
+- **Results reproducibility** -- Will we get the same results if we collect new data using the same procedure?
+
+These questions are part of our motivation for recommending open science practices.
+
+#### Working with the linear model with multiple predictors
+
+We focus in-depth on how you code linear models, how you identify critical information in the results summaries, and how you report the results: the language and the style you can use in your reports.
+
+#### The implications of our results, the revolution in open science and being part of it
+
+Last, we set up questions for you to consider:
+
+- What are the results of our analyses with the new data?
+- What are the implications for health communication?
+
+Then we step back, and consider how we are learning to work in terms of the modern workflow, and the on-going revolution in open science, and how people now build and share knowledge.
 
 ## Readings
 

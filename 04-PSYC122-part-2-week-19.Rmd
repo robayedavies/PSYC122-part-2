@@ -71,7 +71,7 @@ At every stage, as we work, we will visualize the data to:
 
 You will see -- below -- links to the lectures, information about the data we will analyze, and an explanation of the activities.
 
-All the links to the lectures, and everything you need for your practical work class can *also* be found under the **Week 18 resources** section title, on Moodle:
+All the links to the lectures, and everything you need for your practical work class can *also* be found under the **Week 19 resources** section title, on Moodle:
 
 [Link to Moodle](https://modules.lancaster.ac.uk/course/view.php?id=35319#section-9){target="_blank"}
 
@@ -81,11 +81,11 @@ The lecture material for this week is presented in three parts.
 Click on a link and your browser should open a tab showing the *Panopto* video for the lecture part.
 (You will need to be on campus or logged in to the university VPN to get access to the videos.)
 
-[Part 1 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=760dac7f-3556-4abd-bbc5-ae4b00f1a0ab){target="_blank"}
+[Part 1 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=65f7f804-2ab6-4c66-bfba-ae540129a877){target="_blank"}
 
-[Part 2 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=d6a2b6f8-d58a-49cf-8e7d-ae4b00f7af05){target="_blank"}
+[Part 2 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=56aabace-37a7-4f35-a1fb-ae54012f74f8){target="_blank"}
 
-[Part 3 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=e9a332e3-3d5d-4dcc-8cfc-ae4b00fcef0b){target="_blank"}
+[Part 3 of 3](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=17e291f4-530c-486b-be82-ae5401348571){target="_blank"}
 
 ### What's in the lectures
 
@@ -274,13 +274,16 @@ You will use `2021-22-PSYC122-w19-activity.R` in the lab activity practical clas
 We show you how to do everything you need to do in the lab activity (see the next section) in the `how-to` guide.
 
 The guide comprises an .R file `2021-22-PSYC122-w19-how-to.R` with code and advice, and a video showing you how the code works.
-The code in the .R file was written to work with the data file `study-one-general-participants.csv`.
+The code in the .R file was written to work with the data files:
+
+- `study-one-general-participants.csv`
+- `study-two-general-participants.csv`.
 
 In the video, I work my way through the R code, step-by-step, explaining what each line of code does.
-Watching the video takes about 25 minutes.
+Watching the video takes about 35 minutes.
 It is completely optional but I have provided the video because students have told us they find it useful.
 
-[Watch the how-to guide](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=e7576f79-58c0-4a02-9474-ae4c00ad3cf2){target="_blank"}
+[Watch the how-to guide](https://dtu-panopto.lancs.ac.uk/Panopto/Pages/Viewer.aspx?id=a727d5a5-72ea-486f-ada4-ae55010c2058){target="_blank"}
 
 ## Lab activity
 

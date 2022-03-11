@@ -4,21 +4,69 @@ output:
   pdf_document: default
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+
+
+
+```
+## Warning: package 'ggExtra' was built under R version 4.1.1
 ```
 
-```{r libraries, echo=FALSE}
-library(ggeffects)
-library(ggExtra)
-library(ggridges)
-library(patchwork)
-library(tidyverse)
+```
+## Warning: package 'ggridges' was built under R version 4.1.1
 ```
 
-```{r readin, echo=FALSE}
-study.one.general <- read_csv("study-one-general-participants.csv")  
-study.two.general <- read_csv("study-two-general-participants.csv")
+```
+## ── Attaching packages ─────────────────────────────────────── tidyverse 1.3.1 ──
+```
+
+```
+## ✓ ggplot2 3.3.5     ✓ purrr   0.3.4
+## ✓ tibble  3.1.2     ✓ dplyr   1.0.7
+## ✓ tidyr   1.1.3     ✓ stringr 1.4.0
+## ✓ readr   1.4.0     ✓ forcats 0.5.1
+```
+
+```
+## ── Conflicts ────────────────────────────────────────── tidyverse_conflicts() ──
+## x dplyr::filter() masks stats::filter()
+## x dplyr::lag()    masks stats::lag()
+```
+
+
+```
+## 
+## ── Column specification ────────────────────────────────────────────────────────
+## cols(
+##   participant_ID = col_character(),
+##   mean.acc = col_double(),
+##   mean.self = col_double(),
+##   study = col_character(),
+##   AGE = col_double(),
+##   SHIPLEY = col_double(),
+##   HLVA = col_double(),
+##   FACTOR3 = col_double(),
+##   QRITOTAL = col_double(),
+##   GENDER = col_character(),
+##   EDUCATION = col_character(),
+##   ETHNICITY = col_character()
+## )
+## 
+## 
+## ── Column specification ────────────────────────────────────────────────────────
+## cols(
+##   participant_ID = col_character(),
+##   mean.acc = col_double(),
+##   mean.self = col_double(),
+##   study = col_character(),
+##   AGE = col_double(),
+##   SHIPLEY = col_double(),
+##   HLVA = col_double(),
+##   FACTOR3 = col_double(),
+##   QRITOTAL = col_double(),
+##   GENDER = col_character(),
+##   EDUCATION = col_character(),
+##   ETHNICITY = col_character()
+## )
 ```
 
 
@@ -116,67 +164,18 @@ In the lectures, I talk about how we use the linear model to estimate the associ
 In the plot on the right of Figure \@ref(fig:ridges), we show the distribution curve of mean (comprehension) accuracy scores observed at each value of vocabulary
 You can see that the middle -- the average -- of each distribution, marked by a line, increases as we go from left (low scores) to right (high scores).
 
-```{r ridges, fig.width=8, fig.height=4, out.width='90%', warning = FALSE, message = FALSE, echo = FALSE, fig.align='center', fig.cap="Plots showing the association between the outcome mean accuracy of understanding a predictor, vocabulary knowledge, with the plot on the right modified to show how accuracy of understanding varies between individuals in the sample with the sample vocabularytest scores"}
-
-p.ridges <- study.one.general %>%
-  ggplot(aes(y = SHIPLEY, x = mean.acc, group = SHIPLEY)) +
-  stat_density_ridges(
-    quantile_lines = TRUE, quantiles = 2, 
-    rel_min_height = 0.15,
-    jittered_points = TRUE, position = "raincloud",
-    scale = .7,
-    alpha = 0.6, fill = "lightgrey", colour = "darkred") +
-  theme_bw() +
-  theme(
-    axis.text = element_text(size = rel(1.15)),
-    axis.title = element_text(size = rel(1.5))
-  ) + 
-  coord_flip() +
-  xlim(0, 1.1) + ylim(20, 40) +
-  ylab("Vocabulary (Shipley)") + xlab("Mean accuracy")
-
-p.scatter <- study.one.general %>%
-  ggplot(aes(x = SHIPLEY, y = mean.acc)) +
-  geom_point(size = 1.5, alpha = .5) +
-  geom_smooth(size = 1.5, colour = "darkred", method = "lm", se = FALSE) +
-  xlim(20, 40) + ylim(0, 1.1) +
-  theme_bw() +
-  theme(
-    axis.text = element_text(size = rel(1.15)),
-    axis.title = element_text(size = rel(1.5))
-  ) +
-  xlab("Vocabulary (Shipley)") + ylab("Mean accuracy")
-
-p.scatter + p.ridges
-```
+<div class="figure" style="text-align: center">
+<img src="04-PSYC122-part-2-week-19_files/figure-html/ridges-1.png" alt="Plots showing the association between the outcome mean accuracy of understanding a predictor, vocabulary knowledge, with the plot on the right modified to show how accuracy of understanding varies between individuals in the sample with the sample vocabularytest scores" width="90%" />
+<p class="caption">(\#fig:ridges)Plots showing the association between the outcome mean accuracy of understanding a predictor, vocabulary knowledge, with the plot on the right modified to show how accuracy of understanding varies between individuals in the sample with the sample vocabularytest scores</p>
+</div>
 
 I talk about the information we get from a linear model allows us to *predict* the way in which outcome values may vary (increase or decrease), given different values in the predictor variable.
 We could form a prediction line anywhere but the linear model helps us to estimate the prediction ("best fit") line that minimizes the differences between observed and predicted outcomes: *the residuals*.
 
-```{r lm-show-model-residuals, warning = FALSE, message = FALSE, echo = FALSE, fig.width = 4, fig.height = 4, out.width='60%', fig.align='center', fig.cap="Plot showing the prediction of mean accuracy of understanding, given information about participant vocabulary knowledge, with lines drawn to show the difference between observed outcomes (shown in orange-red) and predicted outcomes (shown as black circles on the blue line) for each vocabulary test score value in our sample"}
-
-# -- plot residuals against predicted values
-# https://drsimonj.svbtle.com/visualising-residuals
-# clearly.one.subjects
-fit <- lm(mean.acc ~ SHIPLEY, data = study.one.general)
-# -- then
-study.one.general$predicted <- predict(fit)   # Save the predicted values
-study.one.general$residuals <- residuals(fit) # Save the residual values
-
-# -- plot observed vs. predicted values
-ggplot(study.one.general, aes(x = SHIPLEY, y = mean.acc)) +
-  geom_smooth(method = "lm", se = FALSE, colour = "lightblue") +  # Plot regression slope
-  geom_segment(aes(xend = SHIPLEY, yend = predicted), alpha = .25) +  # alpha to fade lines
-  # > Color adjustments made here...
-  geom_point(aes(color = abs(residuals))) + # Color mapped to abs(residuals)
-  scale_color_continuous(low = "orange", high = "darkred") +  # Colors to use here
-  guides(color = FALSE) +  # Color legend removed 
-  geom_point(aes(y = predicted), shape = 1) +
-  theme_bw() +
-  ylim(0,1.1) + xlim(20,40) +
-  xlab("Vocabulary (Shipley)") + ylab("Mean accuracy")
-
-```
+<div class="figure" style="text-align: center">
+<img src="04-PSYC122-part-2-week-19_files/figure-html/lm-show-model-residuals-1.png" alt="Plot showing the prediction of mean accuracy of understanding, given information about participant vocabulary knowledge, with lines drawn to show the difference between observed outcomes (shown in orange-red) and predicted outcomes (shown as black circles on the blue line) for each vocabulary test score value in our sample" width="60%" />
+<p class="caption">(\#fig:lm-show-model-residuals)Plot showing the prediction of mean accuracy of understanding, given information about participant vocabulary knowledge, with lines drawn to show the difference between observed outcomes (shown in orange-red) and predicted outcomes (shown as black circles on the blue line) for each vocabulary test score value in our sample</p>
+</div>
 
 The lectures end with a discussion of the critical information you must identify and extract when you view the summary of a linear model results.
 I show you how to report the results.
@@ -333,8 +332,23 @@ This process of adapting demonstration code is a process critical to data litera
 ### What is in the data files
 
 Each of the data files we will work with has a similar structure.
-```{r head}
+
+```r
 head(study.one.general)
+```
+
+```
+## # A tibble: 6 x 14
+##   participant_ID mean.acc mean.self study     AGE SHIPLEY  HLVA FACTOR3 QRITOTAL
+##   <chr>             <dbl>     <dbl> <chr>   <dbl>   <dbl> <dbl>   <dbl>    <dbl>
+## 1 studyone.1         0.49      7.96 studyo…    34      33     7      53       11
+## 2 studyone.10        0.85      7.28 studyo…    25      33     7      60       11
+## 3 studyone.100       0.82      7.36 studyo…    43      40     8      46       12
+## 4 studyone.101       0.94      7.88 studyo…    46      33    11      51       15
+## 5 studyone.102       0.58      6.96 studyo…    18      32     3      51       12
+## 6 studyone.103       0.84      7.88 studyo…    19      37    13      45       19
+## # … with 5 more variables: GENDER <chr>, EDUCATION <chr>, ETHNICITY <chr>,
+## #   predicted <dbl>, residuals <dbl>
 ```
 
 You can see the columns:

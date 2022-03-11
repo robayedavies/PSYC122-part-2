@@ -97,3 +97,4 @@ lab-activity-3
 what-is-in-the-activity-.r-file-3
 tasks-3
 what-is-in-the-data-files-3
+lab-activity-we-will-work-with-new-data-based-on-the-responses-of-psyc122-students
